@@ -8,6 +8,8 @@ void
 Board::initialize()
 {
     initscr();
+    cbreak();
+    noecho();
 
     win_ = newwin(snakey, snakex, 0, 0);
     refresh();
